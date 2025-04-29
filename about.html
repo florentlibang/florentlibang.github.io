@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details portfolio</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Mes <span>Projets</span></h1>
+        <div class="filter-buttons">
+            <button class="active" data-filter="all">Tous</button>
+            <button data-filter="web">Web</button>
+            <button data-filter="administration">Administration</button>
+            <button data-filter="mobile">Mobile</button>
+            <button data-filter="desktop">desktop</button>
+        </div>
+    </header>
+
+    <div class="portfolio-container">
+        <!-- Projet 1 -->
+        <div class="portfolio-item" data-category="web">
+            <div class="portfolio-img">
+                <img src="images/sso.png" alt="SSO">
+                <div class="portfolio-overlay">
+                    <a href="#" class="view-details">Voir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-info">
+                <h3>Portail SSO développée avec laravel</h3>
+                <p>Plateforme de connexion à différents sites local du Ministère de la Communication du Cameroun.</p>
+                <div class="tags">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="portfolio-item" data-category="administration">
+            <div class="portfolio-img">
+                <img src="images/OIP.jpeg" alt="Logo Branding">
+                <div class="portfolio-overlay">
+                    <a href="#" class="view-details">Voir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-info">
+                <h3>Monitoring avec Nagios</h3>
+                <p>Plateforme de supervision des équipements dans un réseau.</p>
+                <div class="tags">
+                    <span>Ubuntu</span>
+                    <span>Nagios Core</span>
+                </div>
+            </div>
+        </div>
+
+         <!-- Projet 3 -->
+         <div class="portfolio-item" data-category="desktop">
+            <div class="portfolio-img">
+                <img src="images/R.png" alt="Logo Branding">
+                <div class="portfolio-overlay">
+                    <a href="#" class="view-details">Voir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-info">
+                <h3>Application desktop de Gestion administrative</h3>
+                <p>Plateforme de suivi des activités de l'entreprise CamCCUL (dépenses, stock, courier...).</p>
+                <div class="tags">
+                    <span>JAVA</span>
+                    <span>SQL</span>
+                    <span>UML</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="portfolio-item" data-category="mobile">
+            <div class="portfolio-img">
+                <img src="images/freepik__the-style-is-3d-model-with-octane-render-volumetri__78665.jpeg" alt="Logo Branding">
+                <div class="portfolio-overlay">
+                    <a href="#" class="view-details">Voir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-info">
+                <h3>Application mobile de gestion de tâches réalisée en Flutter.</h3>
+                <p>Plateforme de gestion des inventaires et facturations d'une entreprise locale.</p>
+                <div class="tags">
+                    <span>DART</span>
+                    <span>SQLlite</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ajoutez d'autres projets ici -->
+    </div>
+
+    <script src="about.js"></script>
+</body>
+
+
+</html>
