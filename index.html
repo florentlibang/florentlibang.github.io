@@ -252,33 +252,33 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contactez-<span>Moi!</span></h2>
 
-        <form name="contact" netlify>
+        <form name="contact" method="POST" netlify>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Entrez votre nom" required>
+                    <input type="text" name="nom" placeholder="Entrez votre nom" required>
                     <span class="focus"></span>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="Entrez votre email" required>
+                    <input type="text" name="email" placeholder="Entrez votre email" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Entrez votre numéro de téléphone" required>
+                    <input type="number" name="numero" placeholder="Entrez votre numéro de téléphone" required>
                     <span class="focus"></span>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="objet de l'email" required>
+                    <input type="text" name="objet" placeholder="objet de l'email" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
                 <span class="focus"></span>
             </div>
 
