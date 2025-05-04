@@ -283,7 +283,9 @@
             </div>
 
             <div class="btn-box btns">
-                <button type="submit" class="btn">Soumettre</button>
+                <button type="submit" class="btn" data-sitekey="reCAPTCHA_site_key" 
+                data-callback='onSubmit' 
+                data-action='submit'>Soumettre</button>
             </div>
         </form>
     </section>
@@ -301,5 +303,11 @@
 
     
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("contact").submit();
+        }
+      </script>
 </body>
 </html>
